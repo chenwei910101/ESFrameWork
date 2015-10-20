@@ -192,11 +192,11 @@
 		F4AE69B01BD3D1960002C7E6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				F4AE69B11BD3D1960002C7E6 /* Attention */,
 				F4AE69B91BD3D1960002C7E6 /* Index */,
+				F4AE69B11BD3D1960002C7E6 /* Attention */,
 				F4AE69CC1BD3D1960002C7E6 /* New */,
-				F4AE69D21BD3D1960002C7E6 /* Other */,
 				F4AE69E41BD3D1960002C7E6 /* Setting */,
+				F4AE69D21BD3D1960002C7E6 /* Other */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -325,13 +325,13 @@
 		F4AE69D21BD3D1960002C7E6 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				F4AE69D31BD3D1960002C7E6 /* AppDelegate.h */,
-				F4AE69D41BD3D1960002C7E6 /* AppDelegate.m */,
 				F4C464291BD3DE83005CD2F2 /* Category */,
 				F4AE69DA1BD3D1960002C7E6 /* Controller */,
-				F4AE69DF1BD3D1960002C7E6 /* main.m */,
 				F4AE69E01BD3D1960002C7E6 /* Model */,
 				F4AE69E11BD3D1960002C7E6 /* View */,
+				F4AE69D31BD3D1960002C7E6 /* AppDelegate.h */,
+				F4AE69D41BD3D1960002C7E6 /* AppDelegate.m */,
+				F4AE69DF1BD3D1960002C7E6 /* main.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
