@@ -30,13 +30,12 @@
 我们可以重写这个方法,来拦截push的过程,拿到所有push进来的子控制器,这个时候我们就可以按照我们的要求设置了.
 * 自定义控制器顶部TitleButton:<p>
 我们可以在UIViewController中嵌套ScrollView,再把TableView嵌套在ScrollView上,这个可以参考实现代码我想说两个细节:
-+ scrollView有默认的内边距,一定要去掉
-
+* scrollView有默认的内边距,一定要去掉
 ```
 // 默认自动设置scrollView内边距,现在禁止掉
 self.automaticallyAdjustsScrollViewInsets = NO;
 ```
-+ 我们注意到顶部titleButton被选中后只是本身文字的颜色在变为红色,但是按钮本身并没有变化,这是因为,已经在ESTitleButton,重写了```- (void)setHighlighted:(BOOL)highlighted {}```但是没有实现,我们只需要直接覆盖了系统的做法
+* 我们注意到顶部titleButton被选中后只是本身文字的颜色在变为红色,但是按钮本身并没有变化,这是因为,已经在ESTitleButton,重写了```- (void)setHighlighted:(BOOL)highlighted {}```但是没有实现,我们只需要直接覆盖了系统的做法
 
 
 ###最后:
