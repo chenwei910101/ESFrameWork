@@ -27,8 +27,9 @@
 @property(nonatomic,readonly) UITabBar *tabBar;
 ```
 但是它是只读的!如果一定要是使用这个属性我们可以使用KVC来进行赋值,新建ESTabBar来继承UITabBar,在ESTabBar对tabBar进行处理,之后....在加载控制器的时候将他们呢单独调用即可.
+
 ```
-[self setValue:\[\[ESTabBar alloc]() init] forKey:@"tabBar"];
+[self setValue:[[ESTabBar alloc]() init] forKey:@"tabBar"];
 ```
 + 统一处理子界面返回键文字
 如效果图所示,我们要从每个控制器的子控制器中返回到当前控制器,为了APP界面风格的统一,可能要统一处理返回键上的文字和展示效果,这里大致说下思路,我们每次进去的到子控制器的时候,都是push进去的,那么猜想push应该是有一个过程的,如果我们能拦截到push的过程,是否可以在拦截过程的时候统一设置?经过查找,发现了
